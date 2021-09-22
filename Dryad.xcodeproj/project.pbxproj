@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4C6531026FB66880089194E /* DryadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6530F26FB66880089194E /* DryadApp.swift */; };
+		C4C6531226FB66880089194E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6531126FB66880089194E /* LoginView.swift */; };
+		C4C6531426FB66890089194E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C6531326FB66890089194E /* Assets.xcassets */; };
+		C4C6531726FB66890089194E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C6531626FB66890089194E /* Preview Assets.xcassets */; };
+		C4C6532126FB66890089194E /* DryadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6532026FB66890089194E /* DryadTests.swift */; };
+		C4C6532B26FB66890089194E /* DryadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6532A26FB66890089194E /* DryadUITests.swift */; };
+		C4C6532D26FB66890089194E /* DryadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6532C26FB66890089194E /* DryadUITestsLaunchTests.swift */; };
+		C4C6533D26FB796B0089194E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6533C26FB796B0089194E /* SignInView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4C6531D26FB66890089194E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C6530426FB66880089194E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C6530B26FB66880089194E;
+			remoteInfo = Dryad;
+		};
+		C4C6532726FB66890089194E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C6530426FB66880089194E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C6530B26FB66880089194E;
+			remoteInfo = Dryad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4C6530C26FB66880089194E /* Dryad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dryad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C6530F26FB66880089194E /* DryadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadApp.swift; sourceTree = "<group>"; };
+		C4C6531126FB66880089194E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C4C6531326FB66890089194E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4C6531626FB66890089194E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4C6531C26FB66890089194E /* DryadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DryadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C6532026FB66890089194E /* DryadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadTests.swift; sourceTree = "<group>"; };
+		C4C6532626FB66890089194E /* DryadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DryadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C6532A26FB66890089194E /* DryadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadUITests.swift; sourceTree = "<group>"; };
+		C4C6532C26FB66890089194E /* DryadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4C6533C26FB796B0089194E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4C6530926FB66880089194E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C6531926FB66890089194E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C6532326FB66890089194E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4C6530326FB66880089194E = {
+			isa = PBXGroup;
+			children = (
+				C4C6530E26FB66880089194E /* Dryad */,
+				C4C6531F26FB66890089194E /* DryadTests */,
+				C4C6532926FB66890089194E /* DryadUITests */,
+				C4C6530D26FB66880089194E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4C6530D26FB66880089194E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6530C26FB66880089194E /* Dryad.app */,
+				C4C6531C26FB66890089194E /* DryadTests.xctest */,
+				C4C6532626FB66890089194E /* DryadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4C6530E26FB66880089194E /* Dryad */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6533B26FB79270089194E /* Controllers */,
+				C4C6533A26FB791E0089194E /* Models */,
+				C4C6533926FB790B0089194E /* Views */,
+				C4C6531326FB66890089194E /* Assets.xcassets */,
+				C4C6531526FB66890089194E /* Preview Content */,
+			);
+			path = Dryad;
+			sourceTree = "<group>";
+		};
+		C4C6531526FB66890089194E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6531626FB66890089194E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4C6531F26FB66890089194E /* DryadTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6532026FB66890089194E /* DryadTests.swift */,
+			);
+			path = DryadTests;
+			sourceTree = "<group>";
+		};
+		C4C6532926FB66890089194E /* DryadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6532A26FB66890089194E /* DryadUITests.swift */,
+				C4C6532C26FB66890089194E /* DryadUITestsLaunchTests.swift */,
+			);
+			path = DryadUITests;
+			sourceTree = "<group>";
+		};
+		C4C6533926FB790B0089194E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4C6531126FB66880089194E /* LoginView.swift */,
+				C4C6530F26FB66880089194E /* DryadApp.swift */,
+				C4C6533C26FB796B0089194E /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4C6533A26FB791E0089194E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4C6533B26FB79270089194E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4C6530B26FB66880089194E /* Dryad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C6533026FB66890089194E /* Build configuration list for PBXNativeTarget "Dryad" */;
+			buildPhases = (
+				C4C6530826FB66880089194E /* Sources */,
+				C4C6530926FB66880089194E /* Frameworks */,
+				C4C6530A26FB66880089194E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dryad;
+			productName = Dryad;
+			productReference = C4C6530C26FB66880089194E /* Dryad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4C6531B26FB66890089194E /* DryadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C6533326FB66890089194E /* Build configuration list for PBXNativeTarget "DryadTests" */;
+			buildPhases = (
+				C4C6531826FB66890089194E /* Sources */,
+				C4C6531926FB66890089194E /* Frameworks */,
+				C4C6531A26FB66890089194E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C6531E26FB66890089194E /* PBXTargetDependency */,
+			);
+			name = DryadTests;
+			productName = DryadTests;
+			productReference = C4C6531C26FB66890089194E /* DryadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4C6532526FB66890089194E /* DryadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C6533626FB66890089194E /* Build configuration list for PBXNativeTarget "DryadUITests" */;
+			buildPhases = (
+				C4C6532226FB66890089194E /* Sources */,
+				C4C6532326FB66890089194E /* Frameworks */,
+				C4C6532426FB66890089194E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C6532826FB66890089194E /* PBXTargetDependency */,
+			);
+			name = DryadUITests;
+			productName = DryadUITests;
+			productReference = C4C6532626FB66890089194E /* DryadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4C6530426FB66880089194E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C4C6530B26FB66880089194E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C4C6531B26FB66890089194E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C4C6530B26FB66880089194E;
+					};
+					C4C6532526FB66890089194E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C4C6530B26FB66880089194E;
+					};
+				};
+			};
+			buildConfigurationList = C4C6530726FB66880089194E /* Build configuration list for PBXProject "Dryad" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4C6530326FB66880089194E;
+			productRefGroup = C4C6530D26FB66880089194E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4C6530B26FB66880089194E /* Dryad */,
+				C4C6531B26FB66890089194E /* DryadTests */,
+				C4C6532526FB66890089194E /* DryadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4C6530A26FB66880089194E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C6531726FB66890089194E /* Preview Assets.xcassets in Resources */,
+				C4C6531426FB66890089194E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C6531A26FB66890089194E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C6532426FB66890089194E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4C6530826FB66880089194E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C6531226FB66880089194E /* LoginView.swift in Sources */,
+				C4C6533D26FB796B0089194E /* SignInView.swift in Sources */,
+				C4C6531026FB66880089194E /* DryadApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C6531826FB66890089194E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C6532126FB66890089194E /* DryadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C6532226FB66890089194E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C6532B26FB66890089194E /* DryadUITests.swift in Sources */,
+				C4C6532D26FB66890089194E /* DryadUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4C6531E26FB66890089194E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C6530B26FB66880089194E /* Dryad */;
+			targetProxy = C4C6531D26FB66890089194E /* PBXContainerItemProxy */;
+		};
+		C4C6532826FB66890089194E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C6530B26FB66880089194E /* Dryad */;
+			targetProxy = C4C6532726FB66890089194E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4C6532E26FB66890089194E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4C6532F26FB66890089194E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4C6533126FB66890089194E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dryad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.Dryad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4C6533226FB66890089194E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dryad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.Dryad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4C6533426FB66890089194E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.DryadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dryad.app/Dryad";
+			};
+			name = Debug;
+		};
+		C4C6533526FB66890089194E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.DryadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dryad.app/Dryad";
+			};
+			name = Release;
+		};
+		C4C6533726FB66890089194E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.DryadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dryad;
+			};
+			name = Debug;
+		};
+		C4C6533826FB66890089194E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.DryadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dryad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4C6530726FB66880089194E /* Build configuration list for PBXProject "Dryad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C6532E26FB66890089194E /* Debug */,
+				C4C6532F26FB66890089194E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C6533026FB66890089194E /* Build configuration list for PBXNativeTarget "Dryad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C6533126FB66890089194E /* Debug */,
+				C4C6533226FB66890089194E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C6533326FB66890089194E /* Build configuration list for PBXNativeTarget "DryadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C6533426FB66890089194E /* Debug */,
+				C4C6533526FB66890089194E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C6533626FB66890089194E /* Build configuration list for PBXNativeTarget "DryadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C6533726FB66890089194E /* Debug */,
+				C4C6533826FB66890089194E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4C6530426FB66880089194E /* Project object */;
+}
