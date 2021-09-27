@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var isShowingDetailView = false
+    @State private var isShowingHomeView = false
     
     var body: some View {
         ZStack {
@@ -26,21 +27,28 @@ struct LoginView: View {
                          .cornerRadius(15)
                          .background(Color.white)
                      
+                     NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true).navigationBarHidden(true), isActive: $isShowingHomeView) {
+                            EmptyView()
+                     }
                      
                      Button(action: {
-                         
-                     })
-                     {
+                         isShowingHomeView = true
+                     }) {
                          Text("Login")
                      }
-                     NavigationLink(destination: Text("Second View"), isActive: $isShowingDetailView) { EmptyView() }
-                     Button("Tap to show detail") {
+                     NavigationLink(destination: SignInView(), isActive: $isShowingDetailView) {
+                            EmptyView()
+                         }
+                     Button("No account, no problem, click here to create one") {
                          self.isShowingDetailView = true
                      }
                  }
                  .navigationTitle("Login")
              }
         }
+        
+
+      
     }
 }
 

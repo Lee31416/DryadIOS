@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct SignInView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ZStack {
             Image("background")
@@ -42,7 +44,7 @@ struct SignInView: View {
                     .cornerRadius(15)
                     .background(Color.white)
                 Button(action: {
-                    LoginView()
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Create Account")
                 }
