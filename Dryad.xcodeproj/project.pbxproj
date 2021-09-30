@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4134FB2704A44D00725A98 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4134FA2704A44D00725A98 /* BLEManager.swift */; };
+		BD4134FE2704A74B00725A98 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4134FD2704A74B00725A98 /* MainViewModel.swift */; };
+		BD4135002704A77600725A98 /* ConsoleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4134FF2704A77600725A98 /* ConsoleViewModel.swift */; };
+		BD4135022704A7AD00725A98 /* BLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4135012704A7AD00725A98 /* BLEPeripheral.swift */; };
+		BD4135042704A7CB00725A98 /* CBUUIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4135032704A7CB00725A98 /* CBUUIDS.swift */; };
+		BD4135062704A7F400725A98 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4135052704A7F400725A98 /* TableViewCell.swift */; };
+		BDBFD22926FE607B00045951 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFD22826FE607B00045951 /* HomeView.swift */; };
 		C4C6531026FB66880089194E /* DryadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6530F26FB66880089194E /* DryadApp.swift */; };
 		C4C6531226FB66880089194E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6531126FB66880089194E /* LoginView.swift */; };
 		C4C6531426FB66890089194E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C6531326FB66890089194E /* Assets.xcassets */; };
 		C4C6531726FB66890089194E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C6531626FB66890089194E /* Preview Assets.xcassets */; };
-		C4C6532126FB66890089194E /* DryadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6532026FB66890089194E /* DryadTests.swift */; };
-		C4C6532B26FB66890089194E /* DryadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6532A26FB66890089194E /* DryadUITests.swift */; };
-		C4C6532D26FB66890089194E /* DryadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6532C26FB66890089194E /* DryadUITestsLaunchTests.swift */; };
 		C4C6533D26FB796B0089194E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6533C26FB796B0089194E /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,16 +39,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD4134FA2704A44D00725A98 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		BD4134FD2704A74B00725A98 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		BD4134FF2704A77600725A98 /* ConsoleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleViewModel.swift; sourceTree = "<group>"; };
+		BD4135012704A7AD00725A98 /* BLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheral.swift; sourceTree = "<group>"; };
+		BD4135032704A7CB00725A98 /* CBUUIDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDS.swift; sourceTree = "<group>"; };
+		BD4135052704A7F400725A98 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BDBFD22826FE607B00045951 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C4C6530C26FB66880089194E /* Dryad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dryad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C6530F26FB66880089194E /* DryadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadApp.swift; sourceTree = "<group>"; };
 		C4C6531126FB66880089194E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C4C6531326FB66890089194E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4C6531626FB66890089194E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4C6531C26FB66890089194E /* DryadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DryadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4C6532026FB66890089194E /* DryadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadTests.swift; sourceTree = "<group>"; };
 		C4C6532626FB66890089194E /* DryadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DryadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4C6532A26FB66890089194E /* DryadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadUITests.swift; sourceTree = "<group>"; };
-		C4C6532C26FB66890089194E /* DryadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DryadUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4C6533C26FB796B0089194E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,12 +81,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD4134F92704A43F00725A98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD4134FA2704A44D00725A98 /* BLEManager.swift */,
+				BD4135012704A7AD00725A98 /* BLEPeripheral.swift */,
+				BD4135032704A7CB00725A98 /* CBUUIDS.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD4134FC2704A73900725A98 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD4134FD2704A74B00725A98 /* MainViewModel.swift */,
+				BD4134FF2704A77600725A98 /* ConsoleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C4C6530326FB66880089194E = {
 			isa = PBXGroup;
 			children = (
 				C4C6530E26FB66880089194E /* Dryad */,
-				C4C6531F26FB66890089194E /* DryadTests */,
-				C4C6532926FB66890089194E /* DryadUITests */,
 				C4C6530D26FB66880089194E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,8 +121,8 @@
 		C4C6530E26FB66880089194E /* Dryad */ = {
 			isa = PBXGroup;
 			children = (
-				C4C6533B26FB79270089194E /* Controllers */,
-				C4C6533A26FB791E0089194E /* Models */,
+				BD4134FC2704A73900725A98 /* ViewModels */,
+				BD4134F92704A43F00725A98 /* Models */,
 				C4C6533926FB790B0089194E /* Views */,
 				C4C6531326FB66890089194E /* Assets.xcassets */,
 				C4C6531526FB66890089194E /* Preview Content */,
@@ -113,45 +138,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C4C6531F26FB66890089194E /* DryadTests */ = {
-			isa = PBXGroup;
-			children = (
-				C4C6532026FB66890089194E /* DryadTests.swift */,
-			);
-			path = DryadTests;
-			sourceTree = "<group>";
-		};
-		C4C6532926FB66890089194E /* DryadUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C4C6532A26FB66890089194E /* DryadUITests.swift */,
-				C4C6532C26FB66890089194E /* DryadUITestsLaunchTests.swift */,
-			);
-			path = DryadUITests;
-			sourceTree = "<group>";
-		};
 		C4C6533926FB790B0089194E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C4C6531126FB66880089194E /* LoginView.swift */,
 				C4C6530F26FB66880089194E /* DryadApp.swift */,
 				C4C6533C26FB796B0089194E /* SignInView.swift */,
+				BDBFD22826FE607B00045951 /* HomeView.swift */,
+				BD4135052704A7F400725A98 /* TableViewCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C4C6533A26FB791E0089194E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C4C6533B26FB79270089194E /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +281,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C6531226FB66880089194E /* LoginView.swift in Sources */,
+				BDBFD22926FE607B00045951 /* HomeView.swift in Sources */,
+				BD4135042704A7CB00725A98 /* CBUUIDS.swift in Sources */,
+				BD4134FB2704A44D00725A98 /* BLEManager.swift in Sources */,
 				C4C6533D26FB796B0089194E /* SignInView.swift in Sources */,
+				BD4135062704A7F400725A98 /* TableViewCell.swift in Sources */,
 				C4C6531026FB66880089194E /* DryadApp.swift in Sources */,
+				BD4135022704A7AD00725A98 /* BLEPeripheral.swift in Sources */,
+				BD4135002704A77600725A98 /* ConsoleViewModel.swift in Sources */,
+				BD4134FE2704A74B00725A98 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4C6532126FB66890089194E /* DryadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4C6532B26FB66890089194E /* DryadUITests.swift in Sources */,
-				C4C6532D26FB66890089194E /* DryadUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +450,8 @@
 				DEVELOPMENT_TEAM = 7QR97SAHG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,6 +482,8 @@
 				DEVELOPMENT_TEAM = 7QR97SAHG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
