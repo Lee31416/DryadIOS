@@ -88,15 +88,9 @@ struct PeripheralList: View {
             HStack {
                 Text(peripheral.name)
                 Spacer()
-                Text(String(peripheral.id))
+                Text(String(peripheral.index))
                 Spacer()
                 Button(action: {
-
-
-
-
-
-
                     bleManager.setDevice(peripheral: peripheral)
                     bleManager.connectToDevice()
                 }) {

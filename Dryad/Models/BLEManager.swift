@@ -37,7 +37,7 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
        
         if let name = advertisementData[CBAdvertisementDataLocalNameKey] as? String {
             peripheralName = name
-            let newPeripheral = Peripheral(id: peripherals.count, name: peripheralName, rssi: RSSI.intValue)
+            let newPeripheral = Peripheral(index: peripherals.count, id: peripheral.identifier,name: peripheralName, rssi: RSSI.intValue)
             peripherals.append(newPeripheral)
             cbPeripherals.append(peripheral)
         }
@@ -46,7 +46,7 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
     func setDevice(peripheral: Peripheral) {
         print("CBPeripherals setDevice: \(cbPeripherals)")
         cbPeripherals.forEach { cbPeripheral in
-            if (peripheral.name == cbPeripheral.name) {
+            if (peripheral.id == cbPeripheral.identifier) {
                 myPeripheral = cbPeripheral
             }
         }
@@ -67,9 +67,7 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
     }
     
     func startScanning() {
-        var services = [[CBUUID UUIDWithString: @"2456e1b9-26e2-8f83-e744-f34f01e9d701"] ]; // change to your service UUID!
-        NSDictionary *dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:1] forKey:CBCentralManagerScanOptionAllowDuplicatesKey];
-
+        let service_uuid = [CBUUID.init(string: "e4b20b47-ecf2-40df-af09-e6b38c033d4d"), CBUUID.init(string: "ce2fe5e9-ad22-4671-903b-5673469eb4ce")]
         peripherals.removeAll()
         cbPeripherals.removeAll()
         myCentral.scanForPeripherals(withServices: nil, options: nil)
@@ -81,7 +79,8 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
 }
 
 struct Peripheral: Identifiable {
-    let id: Int
+    let index: Int
+    let id: UUID
     let name: String
     let rssi: Int
 }
