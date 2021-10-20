@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD4134FB2704A44D00725A98 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4134FA2704A44D00725A98 /* BLEManager.swift */; };
-		BD4134FE2704A74B00725A98 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4134FD2704A74B00725A98 /* MainViewModel.swift */; };
-		BD4135002704A77600725A98 /* ConsoleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4134FF2704A77600725A98 /* ConsoleViewModel.swift */; };
 		BD4135022704A7AD00725A98 /* BLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4135012704A7AD00725A98 /* BLEPeripheral.swift */; };
-		BD4135042704A7CB00725A98 /* CBUUIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4135032704A7CB00725A98 /* CBUUIDS.swift */; };
 		BD4135062704A7F400725A98 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4135052704A7F400725A98 /* TableViewCell.swift */; };
 		BDBFD22926FE607B00045951 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFD22826FE607B00045951 /* HomeView.swift */; };
 		C4C6531026FB66880089194E /* DryadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C6530F26FB66880089194E /* DryadApp.swift */; };
@@ -40,10 +37,7 @@
 
 /* Begin PBXFileReference section */
 		BD4134FA2704A44D00725A98 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
-		BD4134FD2704A74B00725A98 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		BD4134FF2704A77600725A98 /* ConsoleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleViewModel.swift; sourceTree = "<group>"; };
 		BD4135012704A7AD00725A98 /* BLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheral.swift; sourceTree = "<group>"; };
-		BD4135032704A7CB00725A98 /* CBUUIDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDS.swift; sourceTree = "<group>"; };
 		BD4135052704A7F400725A98 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BDBFD22826FE607B00045951 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C4C6530C26FB66880089194E /* Dryad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dryad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +80,6 @@
 			children = (
 				BD4134FA2704A44D00725A98 /* BLEManager.swift */,
 				BD4135012704A7AD00725A98 /* BLEPeripheral.swift */,
-				BD4135032704A7CB00725A98 /* CBUUIDS.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,8 +87,6 @@
 		BD4134FC2704A73900725A98 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				BD4134FD2704A74B00725A98 /* MainViewModel.swift */,
-				BD4134FF2704A77600725A98 /* ConsoleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -282,14 +273,11 @@
 			files = (
 				C4C6531226FB66880089194E /* LoginView.swift in Sources */,
 				BDBFD22926FE607B00045951 /* HomeView.swift in Sources */,
-				BD4135042704A7CB00725A98 /* CBUUIDS.swift in Sources */,
 				BD4134FB2704A44D00725A98 /* BLEManager.swift in Sources */,
 				C4C6533D26FB796B0089194E /* SignInView.swift in Sources */,
 				BD4135062704A7F400725A98 /* TableViewCell.swift in Sources */,
 				C4C6531026FB66880089194E /* DryadApp.swift in Sources */,
 				BD4135022704A7AD00725A98 /* BLEPeripheral.swift in Sources */,
-				BD4135002704A77600725A98 /* ConsoleViewModel.swift in Sources */,
-				BD4134FE2704A74B00725A98 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,13 +362,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -429,12 +418,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -447,7 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dryad/Preview Content\"";
-				DEVELOPMENT_TEAM = 7QR97SAHG4;
+				DEVELOPMENT_TEAM = 4VH426SQVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
@@ -463,7 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ether.Dryad;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.Dryad.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,7 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dryad/Preview Content\"";
-				DEVELOPMENT_TEAM = 7QR97SAHG4;
+				DEVELOPMENT_TEAM = 4VH426SQVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
@@ -495,7 +485,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ether.Dryad;
+				PRODUCT_BUNDLE_IDENTIFIER = Ether.Dryad.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,6 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,6 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

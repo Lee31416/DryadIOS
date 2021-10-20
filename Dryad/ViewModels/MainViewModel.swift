@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         peripheralArray.removeAll()
         rssiArray.removeAll()
         // Start Scanning
-        centralManager?.scanForPeripherals(withServices: [CBUUIDs.BLEService_UUID])
+        centralManager?.scanForPeripherals(withServices: [CBUUIDS.BLEService_UUID])
         scanningLabel.text = "Scanning..."
         scanningButton.isEnabled = false
         Timer.scheduledTimer(withTimeInterval: 15, repeats: false) {_ in
@@ -168,7 +168,7 @@ extension ViewController: CBCentralManagerDelegate {
     // MARK: - Connect
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         stopScanning()
-        bluefruitPeripheral.discoverServices([CBUUIDs.BLEService_UUID])
+        bluefruitPeripheral.discoverServices([CBUUIDS.BLEService_UUID])
     }
 }
 
@@ -195,23 +195,23 @@ extension ViewController: CBPeripheralDelegate {
 
     for characteristic in characteristics {
 
-      if characteristic.uuid.isEqual(CBUUIDs.BLE_Characteristic_uuid_Rx)  {
-
-        rxCharacteristic = characteristic
-
-        BlePeripheral.connectedRXChar = rxCharacteristic
-
-        peripheral.setNotifyValue(true, for: rxCharacteristic!)
-        peripheral.readValue(for: characteristic)
-
-        print("RX Characteristic: \(rxCharacteristic.uuid)")
-      }
-
-      if characteristic.uuid.isEqual(CBUUIDs.BLE_Characteristic_uuid_Tx){
-        txCharacteristic = characteristic
-        BlePeripheral.connectedTXChar = txCharacteristic
-        print("TX Characteristic: \(txCharacteristic.uuid)")
-      }
+//      if characteristic.uuid.isEqual(CBUUIDS.BLE_Characteristic_uuid_Rx)  {
+//
+//        rxCharacteristic = characteristic
+//
+//        BlePeripheral.connectedRXChar = rxCharacteristic
+//
+//        peripheral.setNotifyValue(true, for: rxCharacteristic!)
+//        peripheral.readValue(for: characteristic)
+//
+//        print("RX Characteristic: \(rxCharacteristic.uuid)")
+//      }
+//
+//      if characteristic.uuid.isEqual(CBUUIDS.BLE_Characteristic_uuid_Tx){
+//        txCharacteristic = characteristic
+//        BlePeripheral.connectedTXChar = txCharacteristic
+//        print("TX Characteristic: \(txCharacteristic.uuid)")
+//      }
     }
     delayedConnection()
  }
